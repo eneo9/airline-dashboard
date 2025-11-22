@@ -22,9 +22,17 @@ export async function getBusiestRoutes() {
   return res.json();
 }
 
-// 👇 New: demo passengers for dropdown
+// Demo passengers for dropdown
 export async function getDemoPassengers() {
   const res = await fetch(`${API_BASE}/passengers/demo`);
   return res.json();
 }
 
+// Flight metadata (origins/destinations) for dropdowns
+export async function getFlightMeta() {
+  const res = await fetch(`${API_BASE}/flights/meta`);
+  if (!res.ok) {
+    throw new Error("Failed to load flight metadata");
+  }
+  return res.json();
+}
