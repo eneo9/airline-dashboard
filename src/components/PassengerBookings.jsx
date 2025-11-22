@@ -1,5 +1,6 @@
-import { useState } from "react";
-import { getPassengerBookings } from "../api";
+import { useEffect, useState } from "react";
+import { getPassengerBookings, getDemoPassengers } from "../api";
+
 
 export default function PassengerBookings() {
   const [passengerId, setPassengerId] = useState("");
