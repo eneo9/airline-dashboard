@@ -1,16 +1,28 @@
-# React + Vite
+# Airline Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a small React dashboard that works with my Airline API. It lets you search flights, check passenger bookings, and view the busiest routes. All the data comes from a MongoDB Atlas database through an Express API.
 
-Currently, two official plugins are available:
+The dashboard is built with React + Vite and is deployed on Vercel.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Live Demo
+https://airline-dashboard-gamma.vercel.app/
 
-## React Compiler
+### Features
+- **Flight Search:** Pick an origin and destination to see available flights.  
+- **Passenger Bookings:** Select a passenger from a dropdown to view all their bookings.  
+- **Busiest Routes:** Shows the most frequently booked routes based on the dataset.  
+- **Real-time API Calls:** All data is fetched directly from the deployed API.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### API Used
+This dashboard uses the backend here:  
+https://airline-api-0yq5.onrender.com/api
 
-## Expanding the ESLint configuration
+### Tech Stack
+- React (Vite)
+- Fetch API
+- Tailwind-style custom CSS
+- MongoDB Atlas (via the backend API)
+- Deployed on Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project is mainly for practice and portfolio purposes.
+
