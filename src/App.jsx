@@ -8,7 +8,7 @@ export default function App() {
       <header className="app-header">
         <h1 className="app-title">Airline Operations Dashboard</h1>
         <p className="app-subtitle">
-          Flights, passenger bookings, and route analytics on top of MongoDB Atlas and an Express API.
+          Shows flights, passenger bookings, and route insights using data stored in MongoDB Atlas.
         </p>
       </header>
 
@@ -19,7 +19,7 @@ export default function App() {
       </div>
 
       <footer className="app-footer">
-        API: https://airline-api-0yq5.onrender.com/api &nbsp;·&nbsp; Frontend: Vercel (React + Vite)
+        Built with Node.js, MongoDB and React
       </footer>
     </div>
   );
