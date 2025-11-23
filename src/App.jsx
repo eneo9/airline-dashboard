@@ -4,16 +4,22 @@ import BusiestRoutes from "./components/BusiestRoutes";
 
 export default function App() {
   return (
-    <div style={{ maxWidth: 900, margin: "0 auto", padding: 24, fontFamily: "Inter, Arial, sans-serif" }}>
-      <h1>Airline Operations Dashboard</h1>
-      <p style={{ color: "#555" }}>
-        Backed by MongoDB Atlas + Express API. Try searching flights, fetching passenger bookings, and viewing busiest routes.
-      </p>
-      <FlightSearch />
-      <PassengerBookings />
-      <BusiestRoutes />
-      <footer style={{ marginTop: 24, fontSize: 12, color: "#777" }}>
-        Built for portfolio demo — update API_BASE in <code>src/api.js</code> when you deploy the API.
+    <div className="app-container">
+      <header className="app-header">
+        <h1 className="app-title">Airline Operations Dashboard</h1>
+        <p className="app-subtitle">
+          Flights, passenger bookings, and route analytics on top of MongoDB Atlas and an Express API.
+        </p>
+      </header>
+
+      <div className="card-grid">
+        <FlightSearch />
+        <PassengerBookings />
+        <BusiestRoutes />
+      </div>
+
+      <footer className="app-footer">
+        API: https://airline-api-0yq5.onrender.com/api &nbsp;·&nbsp; Frontend: Vercel (React + Vite)
       </footer>
     </div>
   );
